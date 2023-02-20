@@ -221,3 +221,34 @@ ul li {
     
 }
 
+@media screen and (min-width: 992px) {
+    .planning .row {
+        display: flex;
+    }  
+
+    .planning .row.container {
+        width: 65%;
+        margin: 0 auto;
+    }
+
+    .planning .col {
+        display: flex;
+        align-items: flex-end;
+    }
+
+    .planning .card {
+        padding: 3rem;
+    }
+
+    .planning .card.bg-white img {
+        width: 60%;
+    }
+
+    .planning {
+        padding: 6rem 0;
+    }
+
+    .planning h2 {
+        padding-top: 6.5rem;
+    }
+}
