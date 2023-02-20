@@ -66,9 +66,20 @@ nav {
 }
 
 ul {
-    display: flex;
+    display: none;
 }
 
 ul li {
     padding-left: 1.5em;
+}
+
+/* media query header */
+@media screen and (min-width: 992px) {
+    ul {
+        display: flex;
+    }
+
+    .hamburger {
+        display: none;
+    }
 }
