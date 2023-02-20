@@ -3,6 +3,7 @@
     --celestial-color: #B5DDFF;
     --purple-color: #9792E4;
     --bg-white: white;
+    --grey-color: #5E7385;
 }
 
 /* RESET */
@@ -30,20 +31,37 @@ img {
     max-width: 100%;
 }
 
+.fa-brands {
+    margin-right: 0.8rem;
+}
+
+.icon {
+    font-size: 5rem;
+    color: var(--header-color);
+}
+
 /* UTILITIES */
 .btn {
     display: inline-block;
-    background-color: brown;
-    padding: 0.3em 0.7em;
+    padding: 0.3rem 0.7rem;
     border-radius: 25px;
+    text-align: center;
 }
 
 .bg-white {
     background-color: var(--bg-white);
 }
 
+.bg-blue {
+    background-color: var(--header-color);
+}
+
 .txt-black {
     color: black;
+}
+
+.txt-white {
+    color: white;
 }
 
 /* LAYOUT */
@@ -70,7 +88,7 @@ ul {
 }
 
 ul li {
-    padding-left: 1.5em;
+    padding-left: 1.5rem;
 }
 
 /* media query header */
@@ -81,5 +99,81 @@ ul li {
 
     .hamburger {
         display: none;
+    }
+}
+
+/* MAIN */
+/* demo application section */
+.col {
+    border-radius: 20px;
+    margin: 2rem 0;
+    background-color: var(--celestial-color);
+    /* debug */
+    border: 1px solid red;
+}
+
+.col.small {
+    text-align: center;
+}
+
+.card {
+    padding: 2rem;
+}
+
+.application h2, 
+.application p,
+.application a,
+.application i {
+    margin-bottom: 1.5rem;
+}
+
+.application h2 {
+    color: var(--header-color);
+}
+
+.application p {
+    font-weight: bold;
+    color: var(--grey-color);
+}
+
+.application a {
+    width: 80%;
+}
+
+/* media query application section */
+@media screen and (min-width: 768px) {
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .col {
+        width: calc(100% / 3 - (40px / 3));
+        margin: 0;
+    }
+
+    .col.large {
+        width: calc(100% / 3 * 2 - (20px / 3));
+    }
+
+    .card-img {
+        width: 50%;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .col.large .card {
+        display: flex;
+    }
+
+    .card-img {
+        width: 100%;
+    }
+
+    .col {
+        margin: 0;
     }
 }
