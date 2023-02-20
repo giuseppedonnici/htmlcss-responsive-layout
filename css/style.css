@@ -64,6 +64,10 @@ img {
     color: white;
 }
 
+.txt-center {
+    text-align: center;
+}
+
 /* LAYOUT */
 .container {
     width: 80%;
@@ -104,7 +108,7 @@ ul li {
 
 /* MAIN */
 /* demo application section */
-.col {
+.application .col {
     border-radius: 20px;
     margin: 2rem 0;
     background-color: var(--celestial-color);
@@ -112,22 +116,22 @@ ul li {
     border: 1px solid red;
 }
 
-.col.small {
+.application .col.small {
     text-align: center;
 }
 
-.card {
+.application .card {
     padding: 2rem;
 }
 
-.application h2, 
+.application h3, 
 .application p,
 .application a,
 .application i {
     margin-bottom: 1.5rem;
 }
 
-.application h2 {
+.application h3 {
     color: var(--header-color);
 }
 
@@ -142,7 +146,7 @@ ul li {
 
 /* media query application section */
 @media screen and (min-width: 768px) {
-    .row {
+    .application .row {
         display: flex;
         flex-wrap: wrap;
         gap: 20px;
@@ -150,30 +154,70 @@ ul li {
         margin-bottom: 2rem;
     }
 
-    .col {
+    .application .col {
         width: calc(100% / 3 - (40px / 3));
         margin: 0;
     }
 
-    .col.large {
+    .application .col.large {
         width: calc(100% / 3 * 2 - (20px / 3));
     }
 
-    .card-img {
+    .application .card-img {
         width: 50%;
     }
 }
 
 @media screen and (min-width: 992px) {
-    .col.large .card {
+    .application .col.large .card {
         display: flex;
     }
 
-    .card-img {
+    .application .card-img {
         width: 100%;
     }
 
-    .col {
+    .application .col {
         margin: 0;
     }
 }
+
+/* strategic planning section */
+.planning {
+    background-color: var(--purple-color);
+    color: white;
+    padding: 2rem 0;
+}   
+
+.planning img,
+.planning h3,
+.planning h2,
+.planning p {
+    margin-bottom: 1.5rem;
+}
+
+.planning h3 + p {
+    font-style: italic;
+}
+
+.planning .card.bg-white {
+    border-radius: 40px;
+    padding: 1.5rem;
+}
+
+.arrow-container {
+    display: flex;
+    justify-content: center;
+}
+
+.arrow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2.5rem;
+    height: 2.5rem;
+    background-color: var(--purple-color);
+    border-radius: 50%;
+    
+}
+
