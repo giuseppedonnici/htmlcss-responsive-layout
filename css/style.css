@@ -35,6 +35,14 @@ section {
     margin-bottom: 4rem;
 }
 
+h2 {
+    font-size: clamp(1.5rem, calc(1.5rem + 3vw), 4rem);
+}
+
+h3 {
+    font-size: clamp(1.1rem, calc(1.5rem + 3vw), 1.5rem);
+}
+
 .fa-brands {
     margin-right: 0.8rem;
 }
@@ -423,3 +431,5 @@ ul li {
         padding: 0 2.5rem;
     }
 }
+
+
