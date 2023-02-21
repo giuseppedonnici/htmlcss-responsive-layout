@@ -437,6 +437,12 @@ ul li {
     }
 }
 
+@media screen and (min-width:992px) {
+    .about .content.right p {
+        padding-right: 5.5rem;
+    }
+}
+
 /* get started section */
 .get-started {
     color: white;
