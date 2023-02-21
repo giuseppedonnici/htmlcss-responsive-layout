@@ -40,6 +40,16 @@ img {
     color: var(--header-color);
 }
 
+.card {
+    padding: 2rem;
+}
+
+.planning .card.bg-white,
+.testimonials .card.bg-purple {
+    border-radius: 40px;
+    padding: 1.5rem;
+}
+
 /* UTILITIES */
 .btn {
     display: inline-block;
@@ -48,12 +58,20 @@ img {
     text-align: center;
 }
 
+.bg-purple {
+    background-color: var(--purple-color);
+}
+
 .bg-white {
     background-color: var(--bg-white);
 }
 
 .bg-blue {
     background-color: var(--header-color);
+}
+
+.txt-purple {
+    color: var(--purple-color);
 }
 
 .txt-black {
@@ -66,6 +84,14 @@ img {
 
 .txt-center {
     text-align: center;
+}
+
+.txt-uppercase {
+    text-transform: uppercase;
+}
+
+.txt-bold {
+    font-weight: bold;
 }
 
 /* LAYOUT */
@@ -118,10 +144,6 @@ ul li {
 
 .application .col.small {
     text-align: center;
-}
-
-.application .card {
-    padding: 2rem;
 }
 
 .application h3, 
@@ -200,11 +222,6 @@ ul li {
     font-style: italic;
 }
 
-.planning .card.bg-white {
-    border-radius: 40px;
-    padding: 1.5rem;
-}
-
 .arrow-container {
     display: flex;
     justify-content: center;
@@ -251,4 +268,41 @@ ul li {
     .planning h2 {
         padding-top: 6.5rem;
     }
+}
+
+/* testimonials section */
+.testimonials p,
+.testimonials h2,
+.testimonials .card-img {
+    margin-bottom: 1rem;
+}
+
+.card-img {
+    
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    margin: 0 auto;
+    height: 180px;
+    width: 180px;
+}
+
+.test1 {
+    background-image: url(../img/testimonial1.jpg);
+}
+
+.test2 {
+    background-image: url(../img/testimonial2.jpg);
+}
+
+.test3 {
+    background-image: url(../img/testimonial3.jpg);
+}
+
+.testimonials p {
+    line-height: 1.7rem;
+}
+
+.testimonials .col {
+    margin-bottom: 1.5rem;
 }
