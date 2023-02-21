@@ -17,7 +17,7 @@ ul {
     list-style-type: none;
 }
 
-a {
+a:not(footer a) {
     text-decoration: none;
     color: inherit;
 }
@@ -468,6 +468,23 @@ ul li {
 /* media query get started section */
 @media screen and (min-width: 992px) {
     .get-started .row {
+        padding: 2.5rem 12rem;
+    }
+}
+
+/* FOOTER */
+footer {
+    margin-top: -4.5rem;
+    background-color: #333333;
+    color: white;
+}
+
+footer * {
+    padding: 2.5rem 0;
+}
+
+@media screen and (min-width: 992px){
+    footer .row {
         padding: 2.5rem 12rem;
     }
 }
