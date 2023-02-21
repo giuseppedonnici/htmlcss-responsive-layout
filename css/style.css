@@ -238,6 +238,7 @@ ul li {
     
 }
 
+/* media query planning section */
 @media screen and (min-width: 992px) {
     .planning .row {
         display: flex;
@@ -305,4 +306,23 @@ ul li {
 
 .testimonials .col {
     margin-bottom: 1.5rem;
+}
+
+/* media query testimonials section */
+@media screen and (min-width: 768px) {
+    .testimonials .card.bg-purple {
+        display: flex;
+        text-align: left;
+    }
+
+    .testimonials .card-img {
+        width: 100%;
+        margin-right: 1.5rem;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .container {
+        width: 65%;
+    }
 }
