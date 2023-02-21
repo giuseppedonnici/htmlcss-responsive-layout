@@ -142,14 +142,21 @@ ul li {
     border: 1px solid red;
 }
 
+.col.large .card {
+    padding-bottom: 0;
+}
+
+.col.large .card img {
+    display: block;
+}
+
 .application .col.small {
     text-align: center;
 }
 
 .application h3, 
 .application p,
-.application a,
-.application i {
+.application a {
     margin-bottom: 1.5rem;
 }
 
@@ -195,7 +202,16 @@ ul li {
         display: flex;
     }
 
+    .application .card-content {
+        width: 80%;
+    }
+
+    .application .card {
+        height: 100%;
+    }
+
     .application .card-img {
+        align-self: flex-end;
         width: 100%;
     }
 
