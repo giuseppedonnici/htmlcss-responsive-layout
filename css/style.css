@@ -55,7 +55,8 @@ section {
 }
 
 .testimonials p,
-.benefits p {
+.benefits p,
+.about p {
     line-height: 1.7rem;
 }
 
@@ -301,7 +302,8 @@ ul li {
     margin-bottom: 1rem;
 }
 
-.testimonials img {
+.testimonials img,
+.about img {
     width: 180px;
     height: 180px;
     object-fit: cover;
@@ -380,3 +382,27 @@ ul li {
         width: 30%;
     }
 }
+
+/* About us section */
+.about .content.left * {
+    padding-bottom: 1.5rem;
+}
+
+.about .content.right p {
+    padding: 1.5rem 0;
+    font-size: 1.3rem;
+}
+
+.about-img-cont {
+    width: 180px;
+    display: inline-block;
+    position: relative;
+}
+
+.quote {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 4rem;
+}
+
