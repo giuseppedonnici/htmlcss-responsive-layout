@@ -406,3 +406,20 @@ ul li {
     font-size: 4rem;
 }
 
+/* media query about us section */
+@media screen and (min-width: 768px) {
+    .about .row {
+        display: flex;
+        /* justify-content: space-between; */
+    }
+
+    .about .content.left {
+        width: 60%;
+        padding: 0 2rem;
+    }
+
+    .about .content.right {
+        width: 40%;
+        padding: 0 2.5rem;
+    }
+}
