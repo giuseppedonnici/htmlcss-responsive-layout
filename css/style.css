@@ -278,26 +278,12 @@ ul li {
     margin-bottom: 1rem;
 }
 
-.card-img {
-    
-    background-size: cover;
-    background-position: center;
-    border-radius: 50%;
-    margin: 0 auto;
-    height: 180px;
+.testimonials img {
     width: 180px;
-}
-
-.test1 {
-    background-image: url(../img/testimonial1.jpg);
-}
-
-.test2 {
-    background-image: url(../img/testimonial2.jpg);
-}
-
-.test3 {
-    background-image: url(../img/testimonial3.jpg);
+    height: 180px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-right: 1rem;
 }
 
 .testimonials p {
@@ -325,4 +311,6 @@ ul li {
     .container {
         width: 65%;
     }
+
 }
+
