@@ -31,6 +31,10 @@ img {
     max-width: 100%;
 }
 
+section {
+    margin-bottom: 4rem;
+}
+
 .fa-brands {
     margin-right: 0.8rem;
 }
@@ -48,6 +52,11 @@ img {
 .testimonials .card.bg-purple {
     border-radius: 40px;
     padding: 1.5rem;
+}
+
+.testimonials p,
+.benefits p {
+    line-height: 1.7rem;
 }
 
 /* UTILITIES */
@@ -138,8 +147,6 @@ ul li {
     border-radius: 20px;
     margin: 2rem 0;
     background-color: var(--celestial-color);
-    /* debug */
-    border: 1px solid red;
 }
 
 .col.large .card {
@@ -302,10 +309,6 @@ ul li {
     margin-right: 1rem;
 }
 
-.testimonials p {
-    line-height: 1.7rem;
-}
-
 .testimonials .col {
     margin-bottom: 1.5rem;
 }
@@ -324,9 +327,37 @@ ul li {
 }
 
 @media screen and (min-width: 992px) {
-    .container {
+    /* .container {
         width: 65%;
-    }
-
+    } */
 }
 
+/* benefits section */
+.number {
+    font-size: 3rem;
+    font-weight: 900;
+}
+
+.benefits h2 {
+    padding: 2rem 0;
+}
+
+.benefits .btn {
+    width: 50%;
+}
+
+.benefits .col {
+    padding-bottom: 1.5rem;
+}
+
+.benefits .card {
+    padding-bottom: 0;
+}
+
+.benefits .card * {
+    margin-bottom: 1.5rem;
+}
+
+.benefits .card.bg-white {
+    border-radius: 20px;
+}
