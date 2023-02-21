@@ -64,7 +64,8 @@ h3 {
 
 .testimonials p,
 .benefits p,
-.about p {
+.about p,
+.get-started .spacing {
     line-height: 1.7rem;
 }
 
@@ -110,6 +111,10 @@ h3 {
 
 .txt-bold {
     font-weight: bold;
+}
+
+.letter-spacing {
+    letter-spacing: 5px;
 }
 
 /* LAYOUT */
@@ -432,4 +437,37 @@ ul li {
     }
 }
 
+/* get started section */
+.get-started {
+    color: white;
+}
 
+.underline {
+    text-decoration: underline;
+}
+
+.get-started .row {
+    padding: 2.5rem 0;
+}
+
+.get-started p,
+.get-started h2,
+.get-started h3,
+.get-started a {
+    margin-bottom: 1.5rem;
+}
+
+.get-started h2 {
+    color: #FDC15F;
+}
+
+.get-started a {
+    padding: 0.8rem 3rem;
+}
+
+/* media query get started section */
+@media screen and (min-width: 992px) {
+    .get-started .row {
+        padding: 2.5rem 12rem;
+    }
+}
