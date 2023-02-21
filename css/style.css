@@ -361,3 +361,22 @@ ul li {
 .benefits .card.bg-white {
     border-radius: 20px;
 }
+
+/* media query benefits section */
+@media screen and (min-width: 768px) {
+    .benefits .row {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .benefits .col {
+        width: 48%;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .benefits .col {
+        width: 30%;
+    }
+}
